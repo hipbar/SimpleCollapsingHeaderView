@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "f32e865bcc421d9b4249e9f4bfc71400"
-build_time: [1592860013, 6613000]
+options: "87b584ec8e8b092710d202489e707878"
+build_time: [1592861256, 664661000]
 inputs:
-  "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/Classes/SimpleCollapsingHeaderView.swift": !dirty [1592854507, 168707649]
-  "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/Classes/SimpleCollapsingHeaderViewDelegate.swift": !dirty [1592859828, 334512755]
+  "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/Classes/SimpleCollapsingHeaderView.swift": [1592861219, 195921081]
+  "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/Classes/SimpleCollapsingHeaderViewDelegate.swift": [1592859828, 334512755]

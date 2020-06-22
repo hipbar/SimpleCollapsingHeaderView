@@ -5,8 +5,11 @@
 //  Created by Nicholas Meschke on 01/13/2018.
 //  Copyright (c) 2018 Nicholas Meschke. All rights reserved.
 //
+import CoreGraphics
 
-import UIKit
+#if !os(macOS)
+    import UIKit
+#endif
 
 @IBDesignable
 public class SimpleCollapsingHeaderView: UIView {

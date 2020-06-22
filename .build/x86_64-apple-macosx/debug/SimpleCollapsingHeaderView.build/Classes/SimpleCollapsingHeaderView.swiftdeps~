@@ -31,6 +31,8 @@ depends-top-level:
 - "CGFloat"
 - !private "CGPoint"
 - "CGRect"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "NSLayoutConstraint"
 - "SimpleCollapsingHeaderView"
 - "SimpleCollapsingHeaderViewDelegate"
@@ -52,14 +54,15 @@ depends-member:
 - !private ["26SimpleCollapsingHeaderViewAAC", "canAnimateHeader"]
 - ["26SimpleCollapsingHeaderViewAAC", "deinit"]
 - ["26SimpleCollapsingHeaderViewAAC", "delegate"]
+- ["26SimpleCollapsingHeaderViewAAC", "draw"]
 - !private ["26SimpleCollapsingHeaderViewAAC", "headerHeightConstraint"]
 - !private ["26SimpleCollapsingHeaderViewAAC", "heightAnchor"]
 - ["26SimpleCollapsingHeaderViewAAC", "init"]
 - !private ["26SimpleCollapsingHeaderViewAAC", "max"]
-- !private ["26SimpleCollapsingHeaderViewAAC", "maxHeight"]
+- ["26SimpleCollapsingHeaderViewAAC", "maxHeight"]
 - !private ["26SimpleCollapsingHeaderViewAAC", "min"]
-- !private ["26SimpleCollapsingHeaderViewAAC", "minHeight"]
-- !private ["26SimpleCollapsingHeaderViewAAC", "previousScrollOffset"]
+- ["26SimpleCollapsingHeaderViewAAC", "minHeight"]
+- ["26SimpleCollapsingHeaderViewAAC", "previousScrollOffset"]
 - !private ["26SimpleCollapsingHeaderViewAAC", "set"]
 - !private ["26SimpleCollapsingHeaderViewAAC", "updateHeader"]
 - !private ["26SimpleCollapsingHeaderView0abcD8DelegateP", "onHeaderDidAnimate"]
@@ -68,7 +71,18 @@ depends-nominal:
 - !private "26SimpleCollapsingHeaderView0abcD8DelegateP"
 depends-dynamic-lookup:
 depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/module.modulemap"
-interface-hash: "5c2755e647e048e659207dae2414e334"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+interface-hash: "a7ddccad33e523ab7f80c4aa0f43c282"
