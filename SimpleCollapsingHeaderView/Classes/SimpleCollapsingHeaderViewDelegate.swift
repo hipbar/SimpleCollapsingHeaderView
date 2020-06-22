@@ -7,5 +7,5 @@
 //
 
 public protocol SimpleCollapsingHeaderViewDelegate: class {
-    func onHeaderDidAnimate(with percentage: CGFloat) 
+    func onHeaderDidAnimate(with percentage: CGFloat?)
 }
