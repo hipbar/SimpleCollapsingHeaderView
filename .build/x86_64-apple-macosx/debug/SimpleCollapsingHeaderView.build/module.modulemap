@@ -1,0 +1,4 @@
+module SimpleCollapsingHeaderView {
+    header "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/SimpleCollapsingHeaderView-Swift.h"
+    requires objc
+}

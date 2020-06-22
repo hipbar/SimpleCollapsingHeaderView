@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SimpleCollapsingHeaderView-debug.module": ["<SimpleCollapsingHeaderView-debug.module>"]
+  "SimpleCollapsingHeaderViewPackageTests-debug.test": ["<SimpleCollapsingHeaderViewPackageTests-debug.test>"]
+  "SimpleCollapsingHeaderViewTests-debug.module": ["<SimpleCollapsingHeaderViewTests-debug.module>"]
+  "main": ["<SimpleCollapsingHeaderView-debug.module>"]
+  "test": ["<SimpleCollapsingHeaderView-debug.module>","<SimpleCollapsingHeaderViewPackageTests-debug.test>","<SimpleCollapsingHeaderViewTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/":
+    is-directory-structure: true
+  "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/Tests/SimpleCollapsingHeaderViewTests/":
+    is-directory-structure: true
+commands:
+  "<SimpleCollapsingHeaderView-debug.module>":
+    tool: phony
+    inputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/Classes/SimpleCollapsingHeaderView.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/Classes/SimpleCollapsingHeaderViewDelegate.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.swiftmodule"]
+    outputs: ["<SimpleCollapsingHeaderView-debug.module>"]
+
+  "<SimpleCollapsingHeaderViewPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewPackageTests.xctest/Contents/MacOS/SimpleCollapsingHeaderViewPackageTests"]
+    outputs: ["<SimpleCollapsingHeaderViewPackageTests-debug.test>"]
+
+  "<SimpleCollapsingHeaderViewTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build/SimpleCollapsingHeaderViewTests.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build/XCTestManifests.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.swiftmodule"]
+    outputs: ["<SimpleCollapsingHeaderViewTests-debug.module>"]
+
+  "C.SimpleCollapsingHeaderView-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/Classes/SimpleCollapsingHeaderView.swift","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/Classes/SimpleCollapsingHeaderViewDelegate.swift"]
+    outputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/Classes/SimpleCollapsingHeaderView.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/Classes/SimpleCollapsingHeaderViewDelegate.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SimpleCollapsingHeaderView"
+    module-output-path: "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.swiftmodule"
+    import-paths: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build"
+    objects: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/Classes/SimpleCollapsingHeaderView.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/Classes/SimpleCollapsingHeaderViewDelegate.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/SimpleCollapsingHeaderView-Swift.h","-color-diagnostics"]
+    sources: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/Classes/SimpleCollapsingHeaderView.swift","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/Classes/SimpleCollapsingHeaderViewDelegate.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 12
+
+  "C.SimpleCollapsingHeaderViewPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/Classes/SimpleCollapsingHeaderView.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/Classes/SimpleCollapsingHeaderViewDelegate.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build/SimpleCollapsingHeaderViewTests.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build/XCTestManifests.swift.o"]
+    outputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewPackageTests.xctest/Contents/MacOS/SimpleCollapsingHeaderViewPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewPackageTests.xctest/Contents/MacOS/SimpleCollapsingHeaderViewPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug","-o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewPackageTests.xctest/Contents/MacOS/SimpleCollapsingHeaderViewPackageTests","-module-name","SimpleCollapsingHeaderViewPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.10","-Xlinker","-add_ast_path","-Xlinker","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.swiftmodule","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.SimpleCollapsingHeaderViewTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/Tests/SimpleCollapsingHeaderViewTests/SimpleCollapsingHeaderViewTests.swift","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/Tests/SimpleCollapsingHeaderViewTests/XCTestManifests.swift","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.swiftmodule"]
+    outputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build/SimpleCollapsingHeaderViewTests.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build/XCTestManifests.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SimpleCollapsingHeaderViewTests"
+    module-output-path: "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.swiftmodule"
+    import-paths: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build"
+    objects: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build/SimpleCollapsingHeaderViewTests.swift.o","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderViewTests.build/XCTestManifests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/Tests/SimpleCollapsingHeaderViewTests/SimpleCollapsingHeaderViewTests.swift","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/Tests/SimpleCollapsingHeaderViewTests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 12
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/SimpleCollapsingHeaderView/","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/Tests/SimpleCollapsingHeaderViewTests/","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/Package.swift","/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,72 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SimpleCollapsingHeaderView"
+provides-nominal:
+- "26SimpleCollapsingHeaderViewAAC"
+provides-member:
+- ["26SimpleCollapsingHeaderViewAAC", ""]
+- ["26SimpleCollapsingHeaderViewAAC", "collapseHeaderView"]
+provides-dynamic-lookup:
+- "canAnimateHeader"
+- "collapseHeaderView"
+- "delegate"
+- "draw"
+- "headerHeightConstraint"
+- "maxHeight"
+- "minHeight"
+- "previousScrollOffset"
+- "set"
+- "updateHeader"
+depends-top-level:
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "-"
+- !private "/"
+- !private "<"
+- !private ">"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- !private "CGPoint"
+- "CGRect"
+- "NSLayoutConstraint"
+- "SimpleCollapsingHeaderView"
+- "SimpleCollapsingHeaderViewDelegate"
+- "UIScrollView"
+- "UIView"
+- !private "abs"
+- !private "heightAnchor"
+- !private "max"
+- !private "min"
+depends-member:
+- ["26SimpleCollapsingHeaderViewAAC", "Bool"]
+- ["26SimpleCollapsingHeaderViewAAC", "CGFloat"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "CGPoint"]
+- ["26SimpleCollapsingHeaderViewAAC", "CGRect"]
+- ["26SimpleCollapsingHeaderViewAAC", "NSLayoutConstraint"]
+- ["26SimpleCollapsingHeaderViewAAC", "SimpleCollapsingHeaderViewDelegate"]
+- ["26SimpleCollapsingHeaderViewAAC", "UIScrollView"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "abs"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "canAnimateHeader"]
+- ["26SimpleCollapsingHeaderViewAAC", "deinit"]
+- ["26SimpleCollapsingHeaderViewAAC", "delegate"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "headerHeightConstraint"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "heightAnchor"]
+- ["26SimpleCollapsingHeaderViewAAC", "init"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "max"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "maxHeight"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "min"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "minHeight"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "previousScrollOffset"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "set"]
+- !private ["26SimpleCollapsingHeaderViewAAC", "updateHeader"]
+- !private ["26SimpleCollapsingHeaderView0abcD8DelegateP", "onHeaderDidAnimate"]
+depends-nominal:
+- "26SimpleCollapsingHeaderViewAAC"
+- !private "26SimpleCollapsingHeaderView0abcD8DelegateP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/lokesh/Documents/repo/ios/SimpleCollapsingHeaderView/.build/x86_64-apple-macosx/debug/SimpleCollapsingHeaderView.build/module.modulemap"
+interface-hash: "5c2755e647e048e659207dae2414e334"

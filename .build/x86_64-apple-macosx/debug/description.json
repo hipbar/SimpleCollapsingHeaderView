@@ -1,0 +1,25 @@
+{
+  "allExecutables" : [
+
+  ],
+  "builtTestProducts" : [
+    {
+      "packageName" : "SimpleCollapsingHeaderView",
+      "productName" : "SimpleCollapsingHeaderViewPackageTests",
+      "testBinary" : "\/Users\/lokesh\/Documents\/repo\/ios\/SimpleCollapsingHeaderView\/.build\/x86_64-apple-macosx\/debug\/SimpleCollapsingHeaderViewPackageTests.xctest\/Contents\/MacOS\/SimpleCollapsingHeaderViewPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "rootExecutables" : [
+
+  ],
+  "swiftTargetMap" : {
+    "C.SimpleCollapsingHeaderView-debug.module" : "SimpleCollapsingHeaderView",
+    "C.SimpleCollapsingHeaderViewTests-debug.module" : "SimpleCollapsingHeaderViewTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}
